@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
                 val percentage = tipValue / 100
                 val tipAmount = billValue * percentage
 
-                binding.tipResult.text = tipAmount.toString()
-                binding.percentResult.text = tipStr
+                binding.tipResult.text = tipAmount.toString() + " $"
+                binding.percentResult.text = tipTemp.toString() + " %"
 
             } else if(tipTemp.isEmpty() && billTemp.isNotEmpty()) {
                 Snackbar.make(binding.root, "Tip cannot be empty", Snackbar.LENGTH_SHORT).show()
