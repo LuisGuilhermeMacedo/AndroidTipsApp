@@ -1,5 +1,6 @@
 package com.luis.spacetips
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.WindowInsets
@@ -63,6 +64,8 @@ class MainActivity : AppCompatActivity() {
             binding.etMsTip.setText("")
             binding.etMsBill.setText("")
 
+            val intent = Intent(this, SummaryActivity::class.java)
+            startActivity(intent)
 
         }
     }
