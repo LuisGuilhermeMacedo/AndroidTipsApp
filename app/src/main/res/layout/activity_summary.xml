@@ -5,6 +5,68 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_screen_bg"
     tools:context=".SummaryActivity">
+
+    <View
+        android:id="@+id/backgroud_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/main_view_bg"
+        >
+    </View>
+
+    <ImageView
+        android:id="@+id/iv_ms_logo"
+        android:background="@drawable/logo_bg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/dollar"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green Money Tips"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/whitesmoke"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="@+id/iv_ms_logo"
+        app:layout_constraintStart_toEndOf="@+id/iv_ms_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_ms_logo"
+        android:layout_marginStart="8dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_ms_subtitle"
+        android:text="Summary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/whitesmoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+    </TextView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

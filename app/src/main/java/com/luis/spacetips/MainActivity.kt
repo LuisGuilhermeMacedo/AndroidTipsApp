@@ -43,8 +43,7 @@ class MainActivity : AppCompatActivity() {
                 val percentage = tipValue / 100
                 val tipAmount = billValue * percentage
 
-                binding.tipResult.text = tipAmount.toString() + " $"
-                binding.percentResult.text = tipTemp.toString() + " %"
+
 
                 val intent = Intent(this, SummaryActivity::class.java)
                 intent.apply {
@@ -67,8 +66,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.cleanButton.setOnClickListener {
-            binding.tipResult.text = ""
-            binding.percentResult.text = ""
             binding.etMsTip.setText("")
             binding.etMsBill.setText("")
 
