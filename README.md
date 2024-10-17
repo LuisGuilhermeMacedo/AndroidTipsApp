@@ -8,7 +8,8 @@ O projeto consiste em um aplicativo Android nativo desenvolvido utilizando a lin
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="https://github.com/user-attachments/assets/efc17d52-a4b4-4de7-ac10-425ff28fa4a4" width=300/> 
+<img src="https://github.com/user-attachments/assets/7df860df-3ecf-43aa-a3b9-17d6905e0dc5" width=300/>  <img src="https://github.com/user-attachments/assets/1b4fb6e8-5fac-4afe-81bd-4d23fa094167" width=300/> 
+
 
 
 
