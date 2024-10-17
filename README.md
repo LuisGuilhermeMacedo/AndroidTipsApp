@@ -16,6 +16,9 @@ O projeto consiste em um aplicativo Android nativo desenvolvido utilizando a lin
 ## Technologies
 
 - ActivityMainBinding
+- Intent
+  - startActivity
+  - PutExtra
 - Snackbar
 - OnClickListener
 - ViewGroups
