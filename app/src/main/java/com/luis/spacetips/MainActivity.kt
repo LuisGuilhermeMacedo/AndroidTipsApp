@@ -46,6 +46,14 @@ class MainActivity : AppCompatActivity() {
                 binding.tipResult.text = tipAmount.toString() + " $"
                 binding.percentResult.text = tipTemp.toString() + " %"
 
+                val intent = Intent(this, SummaryActivity::class.java)
+                intent.apply {
+                    putExtra("tipResult", tipAmount)
+                    putExtra("tipTemp", tipTemp)
+
+                }
+                startActivity(intent)
+
             } else if(tipTemp.isEmpty() && billTemp.isNotEmpty()) {
                 Snackbar.make(binding.root, "Tip cannot be empty", Snackbar.LENGTH_SHORT).show()
 
@@ -64,8 +72,6 @@ class MainActivity : AppCompatActivity() {
             binding.etMsTip.setText("")
             binding.etMsBill.setText("")
 
-            val intent = Intent(this, SummaryActivity::class.java)
-            startActivity(intent)
 
         }
     }

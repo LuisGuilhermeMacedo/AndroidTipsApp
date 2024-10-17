@@ -9,12 +9,10 @@ import androidx.core.view.WindowInsetsCompat
 class SummaryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_summary)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        val tipAmount = intent.getFloatExtra("tipResult", 0.0f)
+        val tipPercentage = intent.getIntExtra("tipTemp", 0)
+
     }
 }
